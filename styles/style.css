@@ -1,0 +1,770 @@
+body {
+    font-family: 'Arial', sans-serif;
+
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+    url('/src/fondo_pagina.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+body, html {
+    overflow-x: hidden;
+}
+  
+  
+  .hero {
+    position: relative;
+    background: url('/src/ia_portada2.png') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 7rem;
+    font-weight: bold;
+    color: #ff8008;
+    background: linear-gradient(to right, #ff8008, #ff5200);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:#ff8c00;
+    animation: pulse 3s infinite;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn-primary {
+    background-color: #ff8008;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+/*estilos de la ia*/
+/* Estilos específicos para la sección de IA */
+
+#ai-demo .form-control {
+  max-width: 400px; /* Limita el ancho del input de texto */
+}
+
+#ai-demo {
+  background-color: #fff; /* Fondo blanco para el área del demo */
+  padding: 40px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#ai-demo h2 {
+  font-size: 2rem;
+  color: #ff8008; /* Naranja para el título */
+  margin-bottom: 20px;
+  
+}
+
+#ai-demo p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#ai-demo .ai-demo {
+  margin-top: 30px;
+}
+
+#ai-demo input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff8008;
+  border-radius: 5px;
+  width: 50%;
+  transition: border-color 0.3s ease;
+}
+
+#ai-demo input:focus {
+  border-color: #ff5722; /* Naranja oscuro para el focus */
+  outline: none;
+}
+
+/* Estilo para el resultado */
+#ai-demo #result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff8008;
+  transition: color 0.3s ease;
+}
+
+#ai-demo #result.positivo {
+  color: green;
+}
+
+#ai-demo #result.negativo {
+  color: red;
+}
+
+#ai-demo #result.neutral {
+  color: gray;
+}
+
+/* Estilo para el mensaje de ejemplo */
+#ai-demo .mt-3 {
+  font-size: 1rem;
+  color: #ff8008; /* Naranja para los ejemplos */
+  font-style: italic;
+  margin-top: 20px;
+}
+
+#ai-demo .text-center {
+  text-align: center;
+}
+
+/* Estilo para los mensajes de ejemplo y descripción */
+#ai-demo p.text-center {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 10px;
+  background-color: #ffa200; /* Fondo suave naranja */
+  padding: 10px;
+  border-radius:10px;
+  display: inline-block;
+  width: 100%;
+}
+
+#ai-demo .text-center strong {
+  color: #ff8008;
+}
+
+/* Hover effect en el input */
+#ai-demo input:hover {
+  border-color: #ff5722;
+}
+
+/* General styles for the about section */
+#about {
+  position: relative;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+#about .container {
+  max-width: 100%; /* Asegura que el contenido no se desborde horizontalmente */
+  padding: 0 15px; /* Espaciado adecuado en pantallas pequeñas */
+}
+
+#about h2 {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+#about p {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+#about .btn {
+  margin-top: 20px;
+}
+
+/* Estilos generales para la sección */
+#extraInfoContainer {
+  background-color: #ff8008;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#extraInfoContainer p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Animación para la visualización de los textos */
+#extraInfoContainer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Botón de más información */
+button.btn-outline-primary {
+  background-color: transparent;
+  border: 2px solid #ff8008;
+  color: #ff8008;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button.btn-outline-primary:hover {
+  background-color: #ff8008;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Estilos de negrita */
+strong {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#extraInfo {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#extraInfo.show {
+  display: block;
+  opacity: 1;
+}
+
+.bg-orange {
+  background-color: #ff8008; /* Color naranja */
+}
+
+#team .card {
+  position: relative; /* Para poder manejar la posición de la imagen */
+  border-radius: 10px; /* Esquinas redondeadas para la card */
+  overflow: hidden; /* Aseguramos que el contenido de la card no se desborde */
+  transition: transform 0.3s ease-in-out;
+}
+
+#team .card:hover {
+  transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
+}
+
+#team .card-img-container {
+  text-align: center; /* Centrar la imagen */
+  position: relative;
+  padding-top: 10px; /* Espacio entre la parte superior de la tarjeta y la imagen */
+  margin-bottom: 20px; /* Separar la imagen del contenido */
+}
+
+#team .card-img-top {
+  width: 120px; /* Tamaño de la imagen */
+  height: 120px; /* Tamaño de la imagen */
+  object-fit: cover;
+  border-radius: 50%; /* Hacemos la imagen circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra redonda */
+}
+
+.card-body {
+  background-color: #ff8008; /* Fondo naranja */
+  color: white;
+}
+
+.card-body .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-body .card-text {
+  font-size: 1rem;
+  color: #f5f5f5; /* Color más suave para el texto */
+}
+
+.project-interactive {
+  background-color: #ff8008; /* Fondo naranja */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.project-interactive label {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.project-interactive select {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.project-interactive button {
+  background-color: #e06e00; /* Botón naranja más oscuro */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.project-interactive button:hover {
+  background-color: #c75e00; /* Hover en el botón */
+}
+
+/*partners*/
+#partners {
+  background-color: #f9f9f9;
+}
+
+#partners h2 {
+  color: #ff8008;
+  margin-bottom: 1rem;
+}
+
+.carousel-item h4 {
+  color: #ff8008;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ff8008;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+}
+
+#partners .carousel-item strong {
+  color: #ff8008; /* Ajusta este color según tu preferencia */
+  font-weight: bold;
+}
+
+
+/*ley de inteligencia artificial*/
+/* Estilo específico para la aplicación interactiva de la ley */
+.bdi-law-simulation {
+  background-color: #fff3e0;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.bdi-law-simulation h6 {
+  color: #ff8008;
+}
+
+.bdi-law-simulation p {
+  font-size: 14px;
+  color: #555;
+}
+
+#sector-form select {
+  border-color: #ff8008;
+}
+
+#simulation-result {
+  background: #ffe6cc;
+  border: 1px solid #ff8008;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*base de datos con grafos*/
+#scheduleList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#scheduleOutput h6 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+#graphApp {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#graph {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ff8008;
+  position: relative;
+  overflow: hidden;
+}
+
+.node {
+  width: 30px;
+  height: 30px;
+  background-color: #ff8008;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.edge {
+  position: absolute;
+  background-color: #ff8008;
+  height: 2px;
+  transform-origin: top left;
+}
+
+
+/*grafos de conocimiento*/
+/* Estilo para el contenedor del grafo */
+#knowledge-graph-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 2px solid #ddd;
+}
+
+/* Estilo para los nodos */
+.knowledge-node {
+  position: absolute;
+  padding: 10px;
+  background-color: #ff7700;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Estilo para los nodos seleccionados */
+.knowledge-node.selected {
+  background-color: #994b02;
+}
+
+
+/* Estilo para las relaciones (líneas) */
+.knowledge-edge {
+  position: absolute;
+  background-color: #ff5733;
+  height: 2px;
+  transform-origin: 0 0;
+}
+
+.custom-btn {
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+/* Estilo para el botón Añadir Concepto */
+.concept-btn {
+  color: #ff8c00; /* Letra naranja */
+  background-color: white;
+  border-color: #ff8c00;
+}
+
+.concept-btn:hover {
+  background-color: #ff8c00;
+  color: white;
+  transform: scale(1.02);
+}
+
+/* Estilo para el botón Añadir Relación */
+.relation-btn {
+  color: #6c757d; /* Letra gris oscuro */
+  background-color: white;
+  border-color: #6c757d;
+}
+
+.relation-btn:hover {
+  background-color: #6c757d;
+  color: white;
+  transform: scale(1.02);
+}
+
+/* Sombra y clic */
+.custom-btn:active {
+  transform: scale(0.98);
+}
+
+
+@media (max-width: 768px) {
+  .graph-container {
+    height: 300px;
+  }
+
+  .node {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+
+/*aplicaciones extra de inteligencia artificial*/
+/*torres de hanoi*/
+.hanoi-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hanoi-towers {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.tower {
+  width: 30%;
+  height: 300px;
+  background-color: #ffe5cc;
+  border: 2px solid #ff8008;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.disc {
+  height: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #ff8008, #ff5200);
+}
+
+.tower .disc.selected {
+  background-color: #000000 !important;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+
+.disc:hover {
+  background: linear-gradient(to bottom, #ff5200, #ff8008);
+  transform: scale(1.1);
+}
+
+.btn-hanoi {
+  background-color: #ff8008;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-hanoi:hover {
+  background-color: #ff5200;
+}
+
+#game-message {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hanoi-towers {
+    flex-direction: column;
+  }
+
+  .tower {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+/*ia de prolog*/
+/* IA de Prolog */
+/* IA de Prolog */
+#prolog-app h2, #prolog-app p {
+  text-align: center;
+  color: #ff8008;
+  font-family: 'Arial', sans-serif;
+}
+
+#prolog-app h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#prolog-app p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+#prolog-app h2, h4 {
+  font-family: 'Arial', sans-serif;
+}
+
+#prolog-app button {
+  background-color: #ff8008;
+  border: none;
+  color: white;
+}
+
+#prolog-app pre {
+  font-family: 'Courier New', monospace;
+  border: 1px solid #ff8008;
+  border-radius: 5px;
+}
+
+#prolog-app .form-control:focus {
+  border-color: #ff8008;
+  box-shadow: 0 0 5px #ff8008;
+}
+
+#prolog-app button:hover {
+  background-color: #cc6600;
+}
+
+#prolog-app input {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  #prolog-app pre {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+/* Animations */
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInLeft {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+  
+  /* Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+ 
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 6rem; /* Reducir tamaño en pantallas medianas */
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+  
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 5rem; /* Ajuste para pantallas pequeñas */
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  #about h2 {
+    font-size: 1.8rem;
+  }
+    
+  #about p {
+    font-size: 1rem;
+  }
+
+  #extraInfoContainer {
+    padding: 15px;
+  }
+
+  button.btn-outline-primary {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+
+  #extraInfoContainer p {
+      font-size: 1rem;
+  }
+}
+  
+  @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 3rem; /* Tamaño pequeño para móviles */
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  
+    .btn-primary {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+
+    #about h2 {
+      font-size: 1.5rem;
+    }
+    
+    #about p {
+      font-size: 0.9rem;
+    }
+  }
+  

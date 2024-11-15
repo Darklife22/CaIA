@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conferencia Anual de IA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/src/icon-tecba.ico" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <header class="hero d-flex justify-content-center align-items-center">
+      <div class="container text-center" data-aos="fade-up">
+        <h1 class="display-4">CaIA - I</h1>
+        <p class="lead">Conferencia Anual de Inteligencia Artificial</p>
+        <a href="#about" class="btn btn-primary mt-3">Descubre más</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section py-5">
+      <div class="container">
+        <h2 class="text-center" data-aos="fade-right">¿Qué es el evento?</h2>
+        <p class="text-center" data-aos="fade-left">
+          Este evento reúne a expertos en Inteligencia Artificial para discutir
+          las últimas innovaciones. El objetivo de la Conferencia Anual de IA,
+          CaIA-I es el de analizar las bases metodológicas, epistemológicas,
+          socioeconómicas y tecnológicas para impulsar el desarrollo y
+          aplicación de la IA, identificando las bases de la Ley Nacional de
+          Inteligencia Artificial, en los ámbitos Académico, Industrial,
+          Estatal, Socioeconómico, Cultural y Medioambiental del Estado
+          Plurinacional de Bolivia, con una visión hacia la Economía del
+          Conocimiento y la IV Revolución Industrial del siglo XXI.
+        </p>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-primary" onclick="showMoreInfo()">
+            Más información
+          </button>
+          <div id="extraInfoContainer" class="mt-3" style="display: none">
+            <p>
+              <strong
+                >¡Prepárate para una experiencia enriquecedora en IA!</strong
+              >
+            </p>
+            <p><strong>PROGRAMA GENERAL DE CaIA-I</strong></p>
+            <p>
+              Inicio de la Conferencia CaIA-I el día Viernes 29 de noviembre,
+              hrs 8:30 en el Auditorio Leibniz del TECBA, con duración hasta hrs
+              13:00. Las conclusiones serán editadas el día Sábado 30 de
+              noviembre de hrs 8:30 a 11:30. El orden temático es el siguiente:
+            </p>
+            <p>1. Inauguración de la Conferencia CaIA-I</p>
+            <p>2. Los Sistemas de Inteligencia Artificial</p>
+            <p>3. Ley Nacional de la Inteligencia Artificial</p>
+            <p>4. Ciudad 5.0 del Conocimiento-IA</p>
+            <p>5. Mesas de Coordinación y Conclusiones</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Empresas Socias -->
+    <section id="partners" class="section py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center" data-aos="zoom-in" style="color: #ff8008">
+          Empresas Socias en la Conferencia Anual de IA
+        </h2>
+        <p class="text-center text-muted">
+          Descubre las empresas líderes en el sector de la inteligencia
+          artificial que colaboran en este evento.
+        </p>
+
+        <!-- Carrusel de Empresas -->
+        <div
+          id="partnersCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Empresa 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="/src/publication20240105120146.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Empresa 1"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h4>Innovate AI Solutions</h4>
+                  <p>
+                    Líder en soluciones de inteligencia artificial para la
+                    industria manufacturera, desarrollando herramientas de
+                    predicción y análisis en tiempo real.
+                  </p>
+                  <p>
+                    <strong>Proyecto Destacado:</strong> IA Predictiva para la
+                    Optimización Industrial.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Empresa 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="/src/unnamed (2).png"
+                    class="d-block w-100 rounded"
+                    alt="Empresa 2"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h4>DeepMind Tech</h4>
+                  <p>
+                    Especializada en aprendizaje profundo, con proyectos de
+                    vanguardia en la simulación de modelos climáticos y
+                    sostenibilidad.
+                  </p>
+                  <p>
+                    <strong>Proyecto Destacado:</strong> Modelos Predictivos de
+                    Cambio Climático.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Empresa 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="/src/AI-in-Healthcare.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Empresa 3"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h4>AI HealthTech</h4>
+                  <p>
+                    Desarrolla soluciones de inteligencia artificial para el
+                    sector salud, mejorando diagnósticos y tratamientos
+                    personalizados.
+                  </p>
+                  <p>
+                    <strong>Proyecto Destacado:</strong> IA en Diagnóstico
+                    Médico.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles del carrusel -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#partnersCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#partnersCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Demo Section -->
+    <section id="ai-demo" class="section py-5">
+      <div class="container">
+        <h2 class="text-center" data-aos="fade-up">
+          <strong style="color: #ff8008"
+            >Prueba nuestra IA de Sentimientos</strong
+          >
+        </h2>
+        <p class="text-center">
+          Escribe algo en el cuadro de texto para analizar el sentimiento del
+          mensaje. El sistema clasificará el sentimiento como **Positivo**,
+          **Negativo** o **Neutral**.
+        </p>
+        <div class="ai-demo text-center">
+          <input
+            type="text"
+            id="inputText"
+            class="form-control w-50 mx-auto"
+            placeholder="Escribe algo..."
+            oninput="analyzeSentiment()"
+          />
+          <p class="mt-3">
+            <strong style="color: #ff8008">Resultado:</strong>
+            <span id="result">-</span>
+          </p>
+        </div>
+        <p class="mt-3 text-center">
+          Ejemplo: "Me siento muy feliz hoy!" => Resultado: Positivo
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Shapes Section -->
+    <section id="team" class="section py-5">
+      <section class="container">
+        <h2
+          class="text-center"
+          style="color: #ff8008; font-weight: bold"
+          data-aos="fade-down"
+        >
+          Los Creadores de CaIA y Grupo Zis
+        </h2>
+        <div class="row mt-4">
+          <!-- Miembro 1 Ing. German Carmona -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <div class="card-img-container">
+                  <img
+                    src="/src/miembros/ing_carmona.png"
+                    alt="Miembro 1"
+                    class="card-img-top rounded-circle"
+                  />
+                </div>
+                <h5 class="card-title">Ing. German Carmona</h5>
+                <p class="card-text">Rector Nacional TECBA</p>
+                <p>
+                  <strong>Proyecto:</strong> Ley Nacional de Inteligencia Artificial.
+                </p>
+          
+                <!-- Aplicación Interactiva Agentes BDI -->
+                <div class="ley-app mt-4">
+                  <h6 class="text-center" style="color: #ff8008">
+                    Asesor BDI en Ley de IA
+                  </h6>
+                  <p class="text-center" style="color: #ffffff">
+                    Explora cómo los agentes BDI interpretan la Ley de Inteligencia Artificial según cada sector.
+                  </p>
+          
+                  <form id="sector-form" class="text-center">
+                    <label for="sector-select">Selecciona un sector:</label>
+                    <select
+                      id="sector-select"
+                      class="form-control mb-3"
+                      onchange="runBDISimulation()"
+                    >
+                      <option value="">Seleccionar...</option>
+                      <option value="education">Educación</option>
+                      <option value="healthcare">Salud</option>
+                      <option value="finance">Finanzas</option>
+                      <option value="government">Gobierno</option>
+                    </select>
+                  </form>
+          
+                  <!-- Resultados de Agente BDI -->
+                  <div id="bdi-results" class="mt-3" style="display: none;">
+                    <h6><strong>Resultados del Agente BDI:</strong></h6>
+                    <p><strong>Beliefs:</strong> <span id="beliefs"></span></p>
+                    <p><strong>Desires:</strong> <span id="desires"></span></p>
+                    <p><strong>Intentions:</strong> <span id="intentions"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          
+
+          <!-- Miembro 2 (Brandy Reque Coca) -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <div class="card-img-container">
+                  <img
+                    src="/src/miembros/brandy.jpg"
+                    alt="Miembro 2"
+                    class="card-img-top rounded-circle"
+                  />
+                </div>
+                <h5 class="card-title">Brandy Reque Coca</h5>
+                <p class="card-text">Miembro Zis</p>
+                <p>
+                  <strong>Proyecto:</strong> Integración de un programa que
+                  funcione con Prolog para armar o planificar un horario.
+                </p>
+
+                <!-- Sección interactiva de Proyecto -->
+                <div class="project-interactive mt-3">
+                  <h6>Simulador de Planificación de Horario:</h6>
+                  <form id="scheduleForm">
+                    <label for="class">Selecciona una clase:</label>
+                    <select id="class" name="class">
+                      <option value="Matemáticas">Matemáticas</option>
+                      <option value="Física">Física</option>
+                      <option value="Historia">Historia</option>
+                      <option value="Programación">Programación</option>
+                    </select>
+
+                    <label for="time">Selecciona la hora:</label>
+                    <select id="time" name="time">
+                      <option value="08:30">08:30</option>
+                      <option value="10:00">10:00</option>
+                      <option value="11:30">11:30</option>
+                      <option value="13:00">13:00</option>
+                    </select>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary mt-2"
+                      onclick="generateSchedule()"
+                    >
+                      Agregar al horario
+                    </button>
+                  </form>
+
+                  <div id="scheduleOutput" class="mt-3">
+                    <h6>Horario:</h6>
+                    <ul id="scheduleList"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Miembro 3 Emanuel Hurtado-->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <div class="card-img-container">
+                  <img
+                    src="/src/miembros/avatar.png"
+                    alt="Miembro 3"
+                    class="card-img-top rounded-circle"
+                  />
+                </div>
+                <h5 class="card-title">Emanuel Hurtado</h5>
+                <p class="card-text">Miembro Zis</p>
+                <p>
+                  <strong>Proyecto:</strong> Bases de datos orientada a grafos.
+                </p>
+
+                <!-- Visualización del Grafo -->
+                <div id="graphApp" class="mt-4">
+                  <div id="graph"></div>
+                  <button
+                    class="btn btn-outline-primary mt-3"
+                    onclick="addNode()"
+                  >
+                    Añadir Nodo
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary mt-3"
+                    onclick="addEdge()"
+                  >
+                    Añadir Relación
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Miembro 4 Daniel Huanca -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <div class="card-img-container">
+                  <img
+                    src="/src/miembros/daniel.png"
+                    alt="Miembro 4"
+                    class="card-img-top rounded-circle"
+                  />
+                </div>
+                <h5 class="card-title">Daniel Huanca</h5>
+                <p class="card-text">Miembro Zis</p>
+                <p>
+                  <strong>Proyecto:</strong> Implementación de la IA con grafos
+                  de conocimiento.
+                </p>
+
+                <!-- Contenedor de la aplicación de grafo de conocimiento -->
+                <div class="knowledge-graph-container">
+                  <h6
+                    class="text-center"
+                    style="color: white; font-weight: bold"
+                  >
+                    Grafo de Conocimiento Interactivo
+                  </h6>
+                  <div
+                    id="knowledge-graph-container"
+                    style="
+                      position: relative;
+                      width: 100%;
+                      height: 400px;
+                      border: 1px solid #ccc;
+                      background-color: white;
+                    "
+                  ></div>
+                  <div class="d-flex justify-content-between mt-3">
+                    <button
+                      class="btn btn-sm custom-btn concept-btn"
+                      onclick="addKnowledgeNode()"
+                    >
+                      Añadir Concepto
+                    </button>
+                    <button
+                      class="btn btn-sm custom-btn relation-btn"
+                      onclick="createKnowledgeRelation()"
+                    >
+                      Añadir Relación
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Mas ejemplos de IA -->
+
+    <!-- Torres de Hanoi -->
+    <section id="hanoi-game" class="section py-5" style="background-color: #ffffff; padding: 20px; box-shadow: 0 7px 7px rgba(0, 0, 0, 0.8); margin-bottom: 10px;">
+      <div class="container">
+        <h1 class="text-center" style="color: #ff8008 !important" data-aos="fade-up">
+          Juega al clásico Torres de Hanoi
+        </h1>
+        <p class="text-center">
+          Resuelve el desafío moviendo los discos de la Torre 1 a la Torre 3.
+        </p>
+        <div class="hanoi-container text-center">
+          <div class="hanoi-towers">
+            <div class="tower" id="tower1"></div>
+            <div class="tower" id="tower2"></div>
+            <div class="tower" id="tower3"></div>
+          </div>
+          <p class="mt-3">
+            <strong style="color: #ff8008">Movimientos:</strong>
+            <span id="move-count">0</span>
+          </p>
+          <p id="game-message" class="mt-3"></p>
+          <div class="controls mt-3">
+            <label for="numDiscs" style="color: #ff8008; font-weight: bold"
+              >Número de Discos:</label
+            >
+            <input
+              type="number"
+              id="numDiscs"
+              min="3"
+              max="8"
+              value="3"
+              onchange="updateDiscs()"
+            />
+            <button class="btn-hanoi mt-2" onclick="resetGame()">
+              Reiniciar Juego
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--ejemplo de prolog ia-->
+    <section id="prolog-app" class="section py-5" style="background-color: #ffffff;">
+      <div class="container">
+        <h1 class="text-center" style="color: #ff8008 !important" data-aos="fade-up">
+          Crea tu Inteligencia Artificial con Prolog
+        </h1>
+        <p class="text-center">
+          Construye hechos y reglas fácilmente. Aprende y ejecuta Prolog.
+        </p>
+  
+        <div class="row">
+          <div class="col-md-6">
+            <h4 style="color: #ff8008">1. Añadir hechos y reglas</h4>
+            <form id="prologForm" class="mb-3">
+              <div class="mb-3">
+                <label for="factInput" class="form-label">Hecho o Regla:</label>
+                <input
+                  type="text"
+                  id="factInput"
+                  class="form-control"
+                  placeholder="Ejemplo: padre(juan, maria)."
+                  required
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-warning w-100"
+                onclick="addFact()"
+              >
+                Añadir Hecho
+              </button>
+              <button
+                type="button"
+                class="btn btn-warning w-100 mt-2"
+                onclick="addRule()"
+              >
+                Añadir Regla
+              </button>
+            </form>
+          </div>
+  
+          <div class="col-md-6">
+            <h4 style="color: #ff8008">2. Código Prolog Generado</h4>
+            <pre
+              id="prologCode"
+              class="bg-light p-3"
+              style="height: 200px; overflow-y: auto"
+            >
+  % Código Prolog aparecerá aquí...
+            </pre>
+          </div>
+        </div>
+  
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h4 style="color: #ff8008">3. Ejecutar Consultas</h4>
+            <form id="queryForm" class="mb-3">
+              <div class="mb-3">
+                <label for="queryInput" class="form-label">Consulta:</label>
+                <input
+                  type="text"
+                  id="queryInput"
+                  class="form-control"
+                  placeholder="Ejemplo: padre(juan, maria)."
+                  required
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-warning w-100"
+                onclick="runQuery()"
+              >
+                Ejecutar Consulta
+              </button>
+            </form>
+          </div>
+  
+          <div class="col-md-6">
+            <h4 style="color: #ff8008">4. Resultado de la Consulta</h4>
+            <pre
+              id="queryResult"
+              class="bg-light p-3"
+              style="height: 200px; overflow-y: auto"
+            >
+  % Resultado de la consulta aparecerá aquí...
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+
+    <!-- Contact Section -->
+
+    <footer class="text-center py-3 bg-orange text-white" style="margin: auto">
+      <div class="container">
+        <h2 class="text-center" data-aos="fade-down">
+          Conferencia Anual de Inteligencia Artificial
+        </h2>
+        <p class="text-center">
+          29 de noviembre de 2024, Tecnológico Boliviano Alemán
+        </p>
+      </div>
+      <p>&copy; Tecba 2024. Grupo Zis. Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tau-prolog"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
